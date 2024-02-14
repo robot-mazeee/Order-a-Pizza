@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order a pizza</title>
+    </head>
+    <body>
+        <h1>Order your pizza!</h1>
+
+        <form action="action.php" method="post">
+            <div class="personal-data">
+                <h3>Personal Data</h3>
+                <div class="name">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" id="name" name="name" placeholder="robot">
+                </div>
+
+                <br>
+
+                <div class="age">
+                    <label for="age">Enter your age: </label>
+                    <input type="number" id="age" min="18">
+                </div>
+
+                <br>
+
+                <div class="password">
+                    <label for="password">Enter your password: </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="preferences">
+                <h3>Your pizza preferences</h3>
+
+                <div class="extras">
+                    <label for="cheese">Extra cheese</label>
+                    <input type="checkbox" id="cheese" name="cheese">
+                    <label for="sauce">Sauce</label>
+                    <input type="checkbox" id="sauce">
+                </div>
+
+                <br>
+
+                <div class="pizza-type">
+                    <label for="topping">Choose your topping: </label>
+                    <select name="toppping" id="topping">
+                        <option>Meat</option>
+                        <option>Pepperoni</option>
+                        <option>Sausage</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="submit">
+                <button onclick="redirect">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
